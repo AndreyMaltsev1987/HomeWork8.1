@@ -10,10 +10,10 @@ public class PayrollReport {
         employees.add(new Employee("Петров", "Сдельная", 5500));
         System.out.println("ФИО\tНалог, %\tСумма (грн)\tК оплате (грн)");
 
-        for (Employee employee : employees) {
+        for (Object employee : employees) {
         }
         double tax = 0.0;
-        Employee employee;
+        Employee employee = null;
         if (employee.getType().equals("Ставка") || employee.getType().equals("Почасовая")) {
             tax = 0.2;
         } else if (employee.getType().equals("Сдельная")) {
